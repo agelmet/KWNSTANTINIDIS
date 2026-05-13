@@ -145,9 +145,12 @@
 
     <!-- Hero Section -->
     <section class="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden bg-brand-dark">
-        <!-- Hero Background Image (Fixed for mobile, no zoom/scale bugs) -->
+        <!-- Hero Background Image (Fixed for mobile and desktop separately) -->
         <div class="absolute inset-0 z-0">
-            <div class="w-full h-full bg-cover bg-top lg:bg-center" style="background-image: url('https://raw.githubusercontent.com/agelmet/KWNSTANTINIDIS/refs/heads/main/IMG_20221105_134201.jpg');"></div>
+            <!-- Mobile Image -->
+            <div class="block lg:hidden w-full h-full bg-cover bg-top" style="background-image: url('https://raw.githubusercontent.com/agelmet/KWNSTANTINIDIS/refs/heads/main/IMG_20221104_100528_edit.jpg');"></div>
+            <!-- Desktop Image -->
+            <div class="hidden lg:block w-full h-full bg-cover bg-center" style="background-image: url('https://raw.githubusercontent.com/agelmet/KWNSTANTINIDIS/refs/heads/main/IMG_20221105_134201.jpg');"></div>
         </div>
         
         <!-- Dark Overlay for Contrast -->
